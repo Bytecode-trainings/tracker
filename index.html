@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PrepPulse — Interview Preparation Tracker</title>
-  <meta name="description" content="A modern, streamlined tracker for technical interview preparation: DSA, System Design, Behavioral stories, and job applications." />
+  <title>PrepPulse — Interview Preparation Tracker.</title>
+  <meta name="description"
+    content="A modern, streamlined tracker for technical interview preparation: DSA, System Design, Behavioral stories, and job applications." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div class="app-container">
     <!-- Top Navigation / Header -->
     <header class="app-header">
       <div class="brand-group">
         <div class="brand-logo">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round">
             <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
           </svg>
         </div>
@@ -38,7 +44,8 @@
           <span class="pill-lbl">Target: Onsite</span>
         </div>
         <button id="openAddModalBtn" class="btn btn-primary">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
             <line x1="12" y1="5" x2="12" y2="19"></line>
             <line x1="5" y1="12" x2="19" y2="12"></line>
           </svg>
@@ -58,13 +65,16 @@
         <div class="readiness-body">
           <div class="radial-wrap">
             <svg viewBox="0 0 36 36" class="circular-chart">
-              <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
-              <path class="circle" id="radialCircle" stroke-dasharray="72, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+              <path class="circle-bg"
+                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+              <path class="circle" id="radialCircle" stroke-dasharray="72, 100"
+                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
               <text x="18" y="20.8" class="percentage" id="radialPercent">72%</text>
             </svg>
           </div>
           <div class="readiness-info">
-            <div class="metric-big-num"><span id="solvedTargetCount">86</span> <span class="metric-sub">/ 120 Target</span></div>
+            <div class="metric-big-num"><span id="solvedTargetCount">86</span> <span class="metric-sub">/ 120
+                Target</span></div>
             <p class="metric-desc">Target pace: ~3 problems/day before final rounds.</p>
           </div>
         </div>
@@ -124,25 +134,38 @@
     <!-- Main Content Navigation Tabs -->
     <nav class="nav-tabs" role="tablist">
       <button class="tab-btn active" data-tab="dsa" role="tab" aria-selected="true">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="16 18 22 12 16 6"></polyline>
+          <polyline points="8 6 2 12 8 18"></polyline>
+        </svg>
         <span>DSA Problems</span>
         <span class="tab-badge" id="dsaTabCount">0</span>
       </button>
 
       <button class="tab-btn" data-tab="system-design" role="tab" aria-selected="false">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+          <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+          <line x1="6" y1="6" x2="6.01" y2="6"></line>
+          <line x1="6" y1="18" x2="6.01" y2="18"></line>
+        </svg>
         <span>System Design</span>
         <span class="tab-badge" id="sysTabCount">0</span>
       </button>
 
       <button class="tab-btn" data-tab="behavioral" role="tab" aria-selected="false">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
         <span>Behavioral & STAR</span>
         <span class="tab-badge" id="behTabCount">0</span>
       </button>
 
       <button class="tab-btn" data-tab="pipeline" role="tab" aria-selected="false">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+          <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+        </svg>
         <span>Pipeline & Applications</span>
         <span class="tab-badge" id="pipelineTabCount">0</span>
       </button>
@@ -153,7 +176,11 @@
       <!-- Filter Bar -->
       <div class="filter-bar">
         <div class="search-input-wrap">
-          <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
           <input type="text" id="dsaSearchInput" placeholder="Search problems, topics, takeaways..." />
         </div>
 
@@ -217,7 +244,8 @@
       <div class="section-intro">
         <div>
           <h2>System Design & Architecture Topics</h2>
-          <p class="section-desc">Key architectural building blocks, distributed patterns, scalability trade-offs, and case studies.</p>
+          <p class="section-desc">Key architectural building blocks, distributed patterns, scalability trade-offs, and
+            case studies.</p>
         </div>
         <button class="btn btn-secondary btn-sm" id="addSysDesignBtn">+ Add Design Topic</button>
       </div>
@@ -232,7 +260,8 @@
       <div class="section-intro">
         <div>
           <h2>Behavioral & STAR Stories</h2>
-          <p class="section-desc">Structured Situation, Task, Action, and Result outlines tailored for leadership principles and core competencies.</p>
+          <p class="section-desc">Structured Situation, Task, Action, and Result outlines tailored for leadership
+            principles and core competencies.</p>
         </div>
         <button class="btn btn-secondary btn-sm" id="addBehavioralBtn">+ Add Story</button>
       </div>
@@ -358,7 +387,8 @@
 
         <div class="form-group">
           <label for="entryNotes" id="labelNotes">Key Takeaways / Patterns / Notes</label>
-          <textarea id="entryNotes" rows="3" placeholder="Key algorithmic tricks, space/time complexity, or interview pointers..."></textarea>
+          <textarea id="entryNotes" rows="3"
+            placeholder="Key algorithmic tricks, space/time complexity, or interview pointers..."></textarea>
         </div>
 
         <div class="modal-footer">
@@ -371,4 +401,5 @@
 
   <script src="app.js"></script>
 </body>
+
 </html>
